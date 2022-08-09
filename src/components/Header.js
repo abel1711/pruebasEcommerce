@@ -30,7 +30,7 @@ export const Header = ({ navigation, options }) => {
                 </View>
             </View>
             <View>
-                <Text style={ styles.headerText}>{options.title}</Text>
+                <Text style={[ styles.headerText, styles.screenTitle ]}>{options.title}</Text>
             </View>
 
         </View>
@@ -40,13 +40,21 @@ export const Header = ({ navigation, options }) => {
 const styles = StyleSheet.create({
     headerContainer: {
         backgroundColor: '#101010',
-        // height: 90,
+        height: 160,
         alignItems: 'center',
         // flexDirection: 'row',
     },
     header:{
+        width: '100%',
+        height: 90,
         flexDirection: 'row',
-        justifyContent: 'space-around'
+        justifyContent: 'space-around',
+        alignItems: 'center'
+    },
+    screenTitle: {
+        textTransform: 'uppercase',
+        fontSize: 30,
+        fontWeight: '400'
     },
     headerText: {
         color: 'white',

@@ -65,7 +65,6 @@ export const DrawerMenu = ({ descriptors, navigation, state }) => {
                                 }}
                             >
                                 <View style={{
-                                    // backgroundColor: 'red', 
                                     justifyContent: 'space-evenly',
                                     alignItems: 'center',
                                     position: 'absolute',
